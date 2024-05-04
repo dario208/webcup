@@ -97,7 +97,7 @@ function Header(props: PropsHeader) {
             className=""
             alt="Right-svg"
           />
-          <h2 className="text-xl font-bold dark:text-gray-800">SPIA</h2>
+          <h2 className="text-xl font-bold dark:text-gray-800 text_logo">S.P.I.A</h2>
         </Link>
         <>
           <ul className={cardMenue}>
@@ -113,7 +113,7 @@ function Header(props: PropsHeader) {
             </li>
             <li className='dark:text-gray-800'>
               <NavLink
-                to="/ai-books "
+                to="/ai-books"
                 className={({ isActive }) =>
                   isActive ? 'active' : ''
                 }
@@ -123,7 +123,7 @@ function Header(props: PropsHeader) {
             </li>
             <li className='dark:text-gray-800'>
               <NavLink
-                to="/reve "
+                to="/reve"
                 className={({ isActive }) =>
                   isActive ? 'active' : ''
                 }
@@ -133,7 +133,7 @@ function Header(props: PropsHeader) {
             </li>
             <li className='dark:text-gray-800'>
               <NavLink
-                to="/propos "
+                to="/propos"
                 className={({ isActive }) =>
                   isActive ? 'active' : ''
                 }
