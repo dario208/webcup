@@ -28,3 +28,7 @@ package-lock.json
 yarn.lock
 **/*.test.tsx
 setupTests.ts
+misc.xml
+modules.xml
+vcs.xml
+webcup.iml
