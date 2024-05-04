@@ -12,6 +12,7 @@ import { insertUser } from '../../Mutation/insertUser.mutation';
 import { getUser } from '../../Query/GetUser.query';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import './Header.css';
 
 function Header(props: PropsHeader) {
   const [cardMenue, setCardMenue] = useState<string>('card_menue');
@@ -96,15 +97,15 @@ function Header(props: PropsHeader) {
             className=""
             alt="Right-svg"
           />
-          <h2 className="text-xl font-bold dark:text-gray-800">Onirix</h2>
+          <h2 className="text-xl font-bold dark:text-gray-800">SPIA</h2>
         </Link>
         <>
           <ul className={cardMenue}>
             <li className='dark:text-gray-800'>
               <NavLink
                 to="/"
-                className={({ isActive, isPending }) =>
-                  isPending ? 'pending' : isActive ? 'active font-bold' : ''
+                className={({ isActive }) =>
+                  isActive ? 'active' : ''
                 }
               >
                 Accueil
@@ -112,19 +113,19 @@ function Header(props: PropsHeader) {
             </li>
             <li className='dark:text-gray-800'>
               <NavLink
-                to="/topics "
-                className={({ isActive, isPending }) =>
-                  isPending ? 'pending' : isActive ? 'active font-bold' : ''
+                to="/ai-books "
+                className={({ isActive }) =>
+                  isActive ? 'active' : ''
                 }
               >
-                Thèmes
+                Annuaires
               </NavLink>
             </li>
             <li className='dark:text-gray-800'>
               <NavLink
                 to="/reve "
-                className={({ isActive, isPending }) =>
-                  isPending ? 'pending' : isActive ? 'active font-bold' : ''
+                className={({ isActive }) =>
+                  isActive ? 'active' : ''
                 }
               >
                 Vos rêves
@@ -133,8 +134,8 @@ function Header(props: PropsHeader) {
             <li className='dark:text-gray-800'>
               <NavLink
                 to="/propos "
-                className={({ isActive, isPending }) =>
-                  isPending ? 'pending' : isActive ? 'active font-bold' : ''
+                className={({ isActive }) =>
+                  isActive ? 'active' : ''
                 }
               >
                 À propos
