@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import React from 'react';
 
+
 export default function MovingBackground() {
   const round1 = useRef(null);
   const round2 = useRef(null);
