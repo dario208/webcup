@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 27vh;
+    z-index: 100;
 }
 
 .container_cards .cards {
@@ -17,32 +18,31 @@
     transition: all .5s ease-in-out;
     overflow: hidden;
     border: 2px inset #beb4b485;
+    opacity: .8;
     backdrop-filter: blur(11px);
     transform: translateX(0px) translateY(0px) perspective(905px) rotateX(0deg) rotateY(0deg) rotateZ(-8deg);
+    transition: all .5s ease-out;
 }
 
 .container_cards .cards .card.first {
     top: -120px;
     left: -150px;
-    backdrop-filter: blur(11px);
 }
 
 .container_cards .cards .card.second {
     top: -81px;
     left: -90px;
-    backdrop-filter: blur(11px);
 }
 
 .container_cards .cards .card.third {
     top: -50px;
     left: -40px;
-    backdrop-filter: blur(11px);
 }
 
 .container_cards .cards .card:hover {
     z-index: 4;
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) !important;
-    transition: all .5s ease-out;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    opacity: 1;
 }
   
 
