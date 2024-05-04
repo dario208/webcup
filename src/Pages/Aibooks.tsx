@@ -7,6 +7,7 @@ import { getThemes } from '../Query/Theme.query';
 import { Link } from 'react-router-dom';
 import Footer from '../Components/Footer/Footer';
 import Advertissement from '../Components/Advertisement/Advertissement';
+import './styles/Aibooks.css';
 
 function Aibooks(props: PropsMode) {
   const bw = useRef(null as any);
@@ -106,107 +107,68 @@ function Aibooks(props: PropsMode) {
           alt="Right-svg"
         />
       </div>
-      <Advertissement/>
+      {/* <Advertissement/> */}
       <div className="w-full h-auto flex flex-col justify-center items-center gap-28 py-20">
+
+
         <div className="w-full flex justify-between items-center">
           <div className="w-full flex lg:flex-row flex-col justify-between items-start gap-20">
             <div className="lg:w-2/5 w-full flex flex-col lg:items-strart items-center lg:gap-20 gap-6">
               <div className="w-full flex flex-col lg:items-start items-center gap-2">
                 <h4 className="font-bold lg:text-base text-sm lg:text-left text-center leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] uppercase">
-                  Annuaires
+                  Catégories
                 </h4>
                 <h2 className="font-bold lg:text-5xl text-3xl lg:text-left text-center leading-tight w-full">
-                  Découvrez ce que signifie certains symboles dans vos rêves
+                  Découvrez les catégories des I.A existantes
                 </h2>
               </div>
               <p className="lg:text-base text-sm lg:text-left text-center leading-7 text-gray-400">
-                Rappeler-vous , les rêves sont des messages de votre
-                subconscient
+                Les I.A sont sont classifiées selon leur rôle respective...
               </p>
             </div>
-            <div className="w-full h-auto flex flex-col items-strart gap-10">
-              <div className="w-full h-auto rounded-[40px] relative">
-                <img
-                  src="images/img11.png"
-                  className="w-full rounded-[40px] lg:h-[558px] h-[380px]"
-                  alt="logo"
-                />
-                <div className="w-full h-full rounded-[40px] absolute left-0 top-0 lg:pl-20 lg:pt-20 md:pl-10 md:pt-10 lg:pr-10 lg:pb-10 p-6 flex justify-between items-start">
-                  <img
-                    src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'blood.svg'}
-                    className="max-md:hidden"
-                    alt="Right-svg"
-                  />
-                  <div className="md:w-[380px] w-full h-full flex flex-col justify-between items-strart">
-                    <div className="w-full flex flex-col items-start gap-2">
-                      <h4 className="font-normal text-base leading-tight text-black">
-                        Thème
-                      </h4>
-                      <h2 className="font-bold text-3xl leading-tight w-full text-black">
-                        La signification du sang dans vos rêves
-                      </h2>
+
+            <div className="w-full flex flex-col items-strart gap-10">
+              <div className="w-full container_cards">
+                <div className="cards">
+                  <div className="w-[25rem] h-[17rem] rounded-[.7rem] card first">
+                    <div className="max-w h-full overflow-hidden shadow-lg">
+                      <img className="w-full" src="images/aibooks/category_domestique.jpeg" alt="Sunset in the mountains" />
+                      <div className="card_details">
+                        <div className="card_details_button px-3 py-2 rounded-full 
+                          bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] text-md">Domestiques...</div>
+                      </div>
                     </div>
-                    <Link to="/details/8bf5qpa7a96hv4o/8" >
-                      <button className="w-full py-3 px-7 rounded-full bg-black font-bold lg:text-lg text-base">
-                        Voir plus
-                      </button>
-                    </Link>
+                  </div>
+                  <div className="w-[25rem] h-[17rem] rounded-[.7rem] card second">
+                    <div className="max-w h-full overflow-hidden shadow-lg">
+                      <img className="w-full" src="images/aibooks/category_militaire.jpeg" alt="Sunset in the mountains" />
+                      <div className="card_details">
+                        <div className="card_details_button px-3 py-2 rounded-full 
+                          bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] text-md">Militaires...</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[25rem] h-[17rem] rounded-[.7rem] card third">
+                    <div className="max-w h-full overflow-hidden shadow-lg">
+                      <img className="w-full" src="images/aibooks/category_bricoleuse.jpeg" alt="Sunset in the mountains" />
+                    </div>
+                    <div className="card_details">
+                      <div className="card_details_button px-3 py-2 rounded-full 
+                        bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] text-md">Bricoleuses...</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="w-full lg:h-[558px] h-auto flex md:flex-row flex-col justify-center items-center gap-10">
-                <div className="w-full h-full rounded-[40px] relative">
-                  <img
-                    src="images/img12.png"
-                    className="w-full rounded-[40px] lg:h-[558px] h-[380px]"
-                    alt="logo"
-                  />
-                  <div className="w-full lg:h-[558px] h-[380px] flex flex-col justify-between items-strart absolute left-0 top-0 lg:p-10 p-6">
-                    <div className="w-full flex flex-col items-start gap-2">
-                      <h2 className="font-bold text-3xl leading-tight w-full text-black">
-                        Amitié
-                      </h2>
-                      <h4 className="font-normal text-xl leading-8 text-black">
-                        L&apos;amitié est un thème récurrent dans les rêves.
-                      </h4>
-                    </div>
-                    <Link to="/details/sgzcrrttdbhijms/11" >
-                      <button className="w-full py-3 px-7 rounded-full bg-black font-bold lg:text-lg text-base">
-                        Voir plus
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                <div className="w-full h-full rounded-[40px] relative">
-                  <img
-                    src="images/img13.png"
-                    className="w-full rounded-[40px] lg:h-[558px] h-[380px]"
-                    alt="logo"
-                  />
-                  <div className="w-full lg:h-[558px] h-[380px] flex flex-col justify-between items-strart absolute left-0 top-0 lg:p-10 p-6">
-                    <div className="w-full flex flex-col items-start gap-2">
-                      <h2 className="font-bold text-3xl leading-tight w-full text-black">
-                        Le voyage
-                      </h2>
-                      <h4 className="font-normal text-xl leading-8 text-black">
-                        Chaque voyage est une aventure, et les rêves de voyage
-                      </h4>
-                    </div>
-                    <Link to="/details/5rw24ynuf4tgwkq/5" >
-                      <button className="w-full py-3 px-7 rounded-full bg-black font-bold lg:text-lg text-base">
-                        Voir plus
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
+
+
         <div className="w-full h-auto flex flex-col items-start gap-10">
           <div className="w-full flex justify-between items-center">
             <h2 className="font-bold md:text-3xl text-2xl leading-tight">
-              Thèmes de rêves
+              Annuaires des I.A
             </h2>
             <button className="font-normal text-s flex justify-center items-center gap-2">
               Voir plus

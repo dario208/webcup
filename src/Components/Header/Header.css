@@ -2,6 +2,10 @@ header {
     z-index: 1000;
 }
 
+header a h2.text_logo {
+    letter-spacing: 3px;
+}
+
 header ul li {
     position: relative;
     cursor: pointer;
@@ -22,6 +26,10 @@ header ul li a::before {
 
 header ul li a:hover::before {
     width: 100%;
+}
+
+header ul li a.active {
+    font-weight: bold;
 }
 
 header ul li a.active::before {
