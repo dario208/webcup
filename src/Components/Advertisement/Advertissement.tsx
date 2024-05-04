@@ -2,14 +2,33 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+import { gsap } from "gsap";  
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
+gsap.registerPlugin(ScrollTrigger);
 function Advertissement() {
   const [active, setActive] = useState<boolean>(true);
+ const imRef = useRef(null);
+ useEffect(()=>{
+   gsap.from(imRef.current, {
+     scrollTrigger: {
+       trigger: imRef.current,
+       start: "top 80%",
+       toggleActions: "play none none none",
+     },
+     duration: 1,
+     opacity: 0,
+     y: 100,
+   });
+  
+ }, [])
   return (
     <>
     {
       active &&
-      <div className='flex lg:flex-row flex-col justify-between 2xl:items-center lg:items-end items-center 2xl:pl-[188px] lg:pl-20 pl-6 pr-0 2xl:pt-0 lg:pt-10 pt-20 gap-20 bg-black-rgba backdrop-blur-3xl rounded-3xl border-2 border-[#3D3D3D] w-full h-auto relative'>
+      <div  className='flex lg:flex-row flex-col justify-between 2xl:items-center lg:items-end items-center 2xl:pl-[188px] lg:pl-20 pl-6 pr-0 2xl:pt-0 lg:pt-10 pt-20 gap-20 bg-black-rgba backdrop-blur-3xl rounded-3xl border-2 border-[#3D3D3D] w-full h-auto relative '  >
         <div className='py-2 cursor-pointer px-3.5 rounded-full bg-[#3D3D3D] absolute top-4 right-4'><FontAwesomeIcon icon={faXmark} style={{color: "#ffffff",}} onClick={() => setActive(false)}/></div>
         <div className='flex flex-col lg:items-start items-center gap-10 lg:py-10 2xl:py-0 max-lg:mr-6 lg:h-full'>
           <div className='flex flex-col lg:items-start items-center gap-2'>
