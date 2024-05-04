@@ -97,7 +97,7 @@ function Header(props: PropsHeader) {
             className=""
             alt="Right-svg"
           />
-          <h2 className="text-xl font-bold dark:text-gray-800">Onirix</h2>
+          <h2 className="text-xl font-bold dark:text-gray-800">SPIA</h2>
         </Link>
         <>
           <ul className={cardMenue}>
