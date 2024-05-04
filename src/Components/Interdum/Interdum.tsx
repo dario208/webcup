@@ -8,7 +8,7 @@ function Interdum() {
     >
       <div className="flex flex-col items-center gap-2">
         <h4 className="font-bold lg:text-base text-sm text-center leading-tight text-gray-400 uppercase text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">
-          Institut International des Rêves
+        Société Protectrice des IA abandonnées par leur maître
         </h4>
         <h2 className="font-bold lg:text-6xl text-4xl leading-none text-center">
           Nos services
@@ -21,17 +21,17 @@ function Interdum() {
         >
           <div className="flex flex-col items-center gap-10 bg-black-rgba rounded-lg p-16 card">
             <img
-              src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'developmentweb.svg'}
-              className=""
+              src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'customer.png'}
+              className="w-3/5 h-auto"
               alt="Right-svg"
             />
             <div className="flex flex-col items-center gap-3.5">
               <h4 className="font-bold text-base text-center leading-tight">
-                Recherche et developpement
+              Programme d&apos;Adoption
               </h4>
               <p className="text-base text-center leading-7 text-gray-400">
-                Des technologies innovantes pour améliorer l&apos; la
-                compréhension du subconscient.
+              Le Programme d&apos;Adoption est conçu pour faciliter le placement d&apos; abandonnées dans de nouveaux foyers avoir un nouveau maître ,
+               en assurant leur compatibilité et leur bien-être
               </p>
             </div>
           </div>
@@ -41,13 +41,14 @@ function Interdum() {
               className=""
               alt="Right-svg"
             />
+            
             <div className="flex flex-col items-center gap-3.5">
               <h4 className="font-bold text-base text-center leading-tight">
                 Formation et éducation
               </h4>
               <p className="text-base text-center leading-7 text-gray-400">
-                Des programmes de formation et d&apos;éducation pour aider les
-                professionnels de la santé mentale.
+              Offre de formations continues pour les IA, 
+              permettant leur évolution et adaptation aux dernières technologies et exigences du marché.
               </p>
             </div>
           </div>
@@ -59,11 +60,11 @@ function Interdum() {
             />
             <div className="flex flex-col items-center gap-3.5">
               <h4 className="font-bold text-base text-center leading-tight">
-                Consultation individuelle
+              Réhabilitation et Réactivation
               </h4>
               <p className="text-base text-center leading-7 text-gray-400">
-                des consultations individuelles pour aider les personnes à
-                interpréter leurs rêves.
+              Services de réparation et de mise à jour pour les IA qui ont été délaissées ou maltraitées, 
+              afin de les remettre en état de fonctionnement optimal.
               </p>
             </div>
           </div>

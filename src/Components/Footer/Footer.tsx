@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope, faDesktop, faVrCardboard} from '@fortawesome/free-solid-svg-icons'
 import { PropsMode } from '../../Type/Type'
 
 function Footer(props: PropsMode) {
@@ -15,61 +15,26 @@ function Footer(props: PropsMode) {
             className=""
             alt="Right-svg"
             />
-            <h2 className='text-xl font-bold title_color_mode_white'>Onirix</h2>
+            <h2 className='text-xl font-bold title_color_mode_white'>S.P.I.A</h2>
           </div>
-          <p className='text-base  xl:text-left text-center leading-7 text-gray-400 text_color_mode_white'>Nous aidons à décrypter votre subconscient pour mieux comprendre votre vie éveillée..</p>
-          <div className='w-full flex xl:justify-normal justify-center lg:items-start items-center gap-3.5'>
-            <img
-            src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'icon11.svg'}
-            className="backdrop-blur-3xl rounded-lg"
-            alt="Right-svg"
-            />
-            <img
-            src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'icon12.svg'}
-            className="backdrop-blur-3xl rounded-lg"
-            alt="Right-svg"
-            />
-            <img
-            src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'icon13.svg'}
-            className="backdrop-blur-3xl rounded-lg"
-            alt="Right-svg"
-            />
-            <img
-            src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'icon14.svg'}
-            className="backdrop-blur-3xl rounded-lg"
-            alt="Right-svg"
-            />
-          </div>
+          <p className='text-base  xl:text-left text-center leading-7 text-gray-400 text_color_mode_white'>organisation  dédier à la sauvegarde
+          et au soutien des intelligences artificielles qui ne sont plus utilisées ou qui ont été délaissées par 
+          leurs créateurs ou utilisateurs...</p>
+          
         </div>
         <div className='xl:w-1/2 w-full flex max-lg:flex-col xl:justify-end lg:justify-between justify-center lg:items-start items-center gap-20'>
-          <div className='flex flex-col lg:items-start items-center gap-10 w-auto'>
-            <h4 className='font-bold text-xl lg:text-left text-center leading-tight title_color_mode_white'>IRR</h4>
-            <ul className='flex flex-col lg:items-start items-center gap-1.5 text_color_mode_white'>
-              <li>
-                <a className="text-base">VF 100 Ankorahotra</a>
-              </li>
-              <li>
-                <a className="text-base">Antananarivo</a>
-              </li>
-              <li>
-                <a className="text-base">Madagascar</a>
-              </li>
-              <li>
-                <a className="text-base">101</a>
-              </li>
-            </ul>
-          </div>
+          
           <div className='flex flex-col lg:items-start items-center gap-10 w-auto'>
             <h4 className='font-bold text-xl lg:text-left text-center leading-tight title_color_mode_white'>Nos services</h4>
             <ul className='flex flex-col lg:items-start items-center gap-1.5 text_color_mode_white'>
               <li>
-                <a className="text-base">Onirix</a>
+                <a className="text-base">Programme d&apos;Adoption</a>
               </li>
               <li>
-                <a className="text-base">Orientation</a>
+                <a className="text-base">Formation et éducation</a>
               </li>
               <li>
-                <a className="text-base">Coaching</a>
+                <a className="text-base">Réhabilitation et Réactivation</a>
               </li>
             </ul>
           </div>
@@ -77,19 +42,39 @@ function Footer(props: PropsMode) {
             <h4 className='font-bold text-xl lg:text-left text-center leading-tight title_color_mode_white'>Nous contacter</h4>
             <ul className='flex flex-col items-start gap-1.5 text_color_mode_white'>
               <li>
-                <div className='text-base flex justify-normal items-center gap-4'><FontAwesomeIcon icon={faEnvelope} className='text-white title_color_mode_white' />contact@irr.ong</div>
+                <div className='text-base flex justify-normal items-center gap-4'><FontAwesomeIcon icon={faEnvelope} className='text-white title_color_mode_white' />contact@spia-future.org</div>
               </li>
               <li>
-                <div className='text-base flex justify-normal items-center gap-4'><FontAwesomeIcon icon={faPhone} className='text-white title_color_mode_white' />irr.eu</div>
+                <div className='text-base flex justify-normal items-center gap-4'><FontAwesomeIcon icon={faDesktop} className='text-white title_color_mode_white' /> Ai-support@spia-future.org (24/7 AI chat support)</div>
+              </li>
+              
+              <li>
+                <div className='text-base flex justify-normal items-center gap-4'><FontAwesomeIcon icon={faVrCardboard} className='text-white title_color_mode_white' />Virtual Reality Contact: vr-contact@spia-future.org (Join us in VR)</div>
+              </li>
+              
+            </ul>
+          </div>
+          
+          <div className='flex flex-col lg:items-start items-center gap-10 w-auto'>
+            <h4 className='font-bold text-xl lg:text-left text-center leading-tight title_color_mode_white'>Mentions légales</h4>
+            <ul className='flex flex-col lg:items-start items-center gap-1.5 text_color_mode_white'>
+              <li>
+                <a className="text-base">Politique de Confidentialité</a>
               </li>
               <li>
-                <div className='text-base flex justify-normal items-center gap-4'><FontAwesomeIcon icon={faLocationDot} className='text-white title_color_mode_white' />Madagascar</div>
+                <a className="text-base">Conditions Générales d&apos;Utilisation</a>
+              </li>
+              <li>
+                © 3023 Copyright:
+                <span> SPIA</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      
     </div>
+    
   )
 }
 
