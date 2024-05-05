@@ -93,8 +93,9 @@ function Header(props: PropsHeader) {
     <header className="w-full relative pt-4 md:py-10 flex justify-between items-center lg:px-20">
         <Link to="/" className="flex justify-normal items-center gap-3.5">
           <img
-            src={process.env.REACT_APP_LOCAL_IMAGE_PATH + logo }
+            src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'logo.png '}
             className=""
+            style={{ width: 'auto', height: '150px' }}
             alt="Right-svg"
           />
           <h2 className="text-xl font-bold dark:text-gray-800 text_logo">S.P.I.A</h2>

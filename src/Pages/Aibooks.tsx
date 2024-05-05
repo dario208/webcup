@@ -176,7 +176,7 @@ function Aibooks(props: PropsMode) {
               dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
                 <div className="description">
                   <div className="font-bold text-lg m-1 text-center font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Titanium</div>
-                  <p className="m-2">
+                  <p className="mx-4 my-3">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
@@ -205,7 +205,7 @@ function Aibooks(props: PropsMode) {
                   <div className="font-bold text-lg m-1 text-center 
                     font-bold leading-tight text-transparent bg-clip-text 
                     bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Lithium</div>
-                  <p className="m-2">
+                  <p className="mx-4 my-3">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
@@ -234,7 +234,7 @@ function Aibooks(props: PropsMode) {
                   <div className="font-bold text-lg m-1 text-center 
                     font-bold leading-tight text-transparent bg-clip-text 
                     bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Thorium</div>
-                  <p className="m-2">
+                  <p className="mx-4 my-3">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
@@ -264,7 +264,7 @@ function Aibooks(props: PropsMode) {
                   <div className="font-bold text-lg m-1 text-center 
                     font-bold leading-tight text-transparent bg-clip-text 
                     bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Natirium</div>
-                  <p className="m-2">
+                  <p className="mx-4 my-3">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
@@ -294,7 +294,7 @@ function Aibooks(props: PropsMode) {
                   <div className="font-bold text-lg m-1 text-center 
                     font-bold leading-tight text-transparent bg-clip-text 
                     bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Enstenium</div>
-                  <p className="m-2">
+                  <p className="mx-4 my-3">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
@@ -324,7 +324,7 @@ function Aibooks(props: PropsMode) {
                   <div className="font-bold text-lg m-1 text-center 
                     font-bold leading-tight text-transparent bg-clip-text 
                     bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Malagasyum</div>
-                  <p className="m-2">
+                  <p className="mx-4 my-3">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
