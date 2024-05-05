@@ -48,24 +48,8 @@ function Propos(props: PropsMode) {
         </div>
         <div className="w-full h-auto flex flex-col items-center gap-6 bg-black-rgba backdrop-blur-3xl rounded-3xl lg:px-20 lg:py-16 p-6">
           <div className="w-full flex lg:flex-rox flex-col justify-normal items-strart gap-6">
-            <div className="w-full flex flex-col items-strart gap-2">
-              <h4 className="font-bold text-base leading-tight text-white">
-                Nom
-              </h4>
-              <input
-                className="w-full h-[56px] bg-[#061033] outline-none rounded-xl border-2 border-[#081647] p-6"
-                name="myInput"
-              />
-            </div>
-            <div className="w-full flex flex-col items-strart gap-2">
-              <h4 className="font-bold text-base leading-tight text-white">
-                Prenom
-              </h4>
-              <input
-                className="w-full h-[56px] bg-[#061033] outline-none rounded-xl border-2 border-[#081647] p-6"
-                name="myInput"
-              />
-            </div>
+            
+            
           </div>
           <div className="w-full flex flex-col items-strart gap-2">
             <h4 className="font-bold text-base leading-tight text-white">
@@ -76,15 +60,7 @@ function Propos(props: PropsMode) {
               name="myInput"
             />
           </div>
-          <div className="w-full flex flex-col items-strart gap-2">
-            <h4 className="font-bold text-base leading-tight text-white">
-              Votre addresse
-            </h4>
-            <input
-              className="w-full h-[56px] bg-[#061033] outline-none rounded-xl border-2 border-[#081647] p-6"
-              name="myInput"
-            />
-          </div>
+          
           <div className="w-full flex flex-col items-strart gap-2">
             <h4 className="font-bold text-base leading-tight text-white">
               Laissez-nous un message

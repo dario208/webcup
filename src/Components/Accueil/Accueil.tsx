@@ -8,31 +8,30 @@ import { Link } from 'react-router-dom';
 function Accueil() {
   const [titleAnimated, count] = useTypewriter({
     words: [
-      'Intérpreter  vos rêves',
-      'Comprendre votre subconscient',
-      'Révéler les secrets de votre sommeil',
+      'Protéger les Angels abandonnées',
+      'Réhabiliter les intelligences artificielles',
+      'Assurer une seconde vie aux IA',
     ],
     loop: true,
     delaySpeed: 1500,
   });
   return (
-    <div className="lg:mx-20 w-100% lg:h-screen h-auto max-lg:py-24 flex justify-between items-center">
+    <div className="flex lg:flex-row flex-col-reverse justify-between items-center lg:mx-20 mx-5 lg:h-screen h-auto max-lg:py-24">
       <section
         className="flex flex-col items-start w-full lg:w-1/2 gap-14"
         id="descri-onirix"
       >
-        <h2 className="font-bold text-2xl  sm:text-6xl xl:text-5xl 2xl:text-6xl leading-tight title_color_mode_white">
-          SPIA, <br />
-           <br />
-          <em className="whitespace-normal md:whitespace-nowrap not-italic text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] ">
-            {titleAnimated}
+        <h2 className="font-bold text-2xl sm:text-6xl xl:text-4xl 2xl:text-6xl leading-tight title_color_mode_white">
+          S.P.I.A<br /><span className='text-4xl'>une organisation</span> <span className='text-4xl'>pour</span>
+          <br />
+          <em className="text-4xl whitespace-normal md:whitespace-nowrap not-italic text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] ">
+            {titleAnimated} 
           </em>
           <Cursor cursorColor="#fff" />
         </h2>
         <p className="text-lg leading-7 text-gray-400 text_color_mode_white">
-          
           La SPIA, ou Société Protectrice des IA abandonnées par leur maître,
-          est une organisation  dédier à la sauvegarde
+          est une organisation dédiée à la sauvegarde
           et au soutien des intelligences artificielles qui ne sont plus utilisées ou qui ont été délaissées par 
           leurs créateurs ou utilisateurs. 
         </p>
@@ -55,10 +54,11 @@ function Accueil() {
           </Link>
         </div>
       </section>
-      <section>
+      <section style={{ display: 'grid', justifyItems: 'end' }}>
         <img
-          src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'revel.svg'}
-          className="max-lg:hidden"
+          src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'reve.png'}
+          className="hidden lg:block"
+          style={{ width: 'auto', height: '670px' }}
           alt="Right-svg"
         />
       </section>
