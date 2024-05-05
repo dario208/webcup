@@ -23,10 +23,8 @@ function ExPromptCard() {
           </h2>
         </div>
         <div className="lg:text-left text-center text-base leading-7 text-gray-400 text_color_mode_white">
-          Décryptez vos rêves en toute confidentialité avec Onyrix.
-          Soumettez-nous la description de votre rêve et nous vous offrons une
-          interprétation personnalisée grâce à notre intelligence artificielle
-          sophistiquée. Et tout ça en quelques clics !
+        Découvrez les catégories des I.A existantes
+        Les I.A sont sont classifiées selon leur rôle respective...
         </div>
         <Link
           to="/ai-books"
