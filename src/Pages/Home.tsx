@@ -20,7 +20,7 @@ function Home(props: PropsMode) {
     <div>
       <Accueil />
       <Advertissement />
-      <Partenaire modeWhite={props.modeWhite}/>
+      {/* <Partenaire modeWhite={props.modeWhite}/> */}
       <ExPromptCard/>
       {/* <Services /> */}
       <Penatibus />

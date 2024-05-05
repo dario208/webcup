@@ -32,7 +32,7 @@ function Advertissement() {
         <div className='py-2 cursor-pointer px-3.5 rounded-full bg-[#3D3D3D] absolute top-4 right-4'><FontAwesomeIcon icon={faXmark} style={{color: "#ffffff",}} onClick={() => setActive(false)}/></div>
         <div className='flex flex-col lg:items-start items-center gap-10 lg:py-10 2xl:py-0 max-lg:mr-6 lg:h-full'>
           <div className='flex flex-col lg:items-start items-center gap-2'>
-            <h4 className='font-bold lg:text-base text-sm lg:text-left text-center leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] uppercase'>Société Protectrice des IA abandonnées </h4>
+            <h4 className='font-bold lg:text-base text-sm lg:text-left text-center leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] uppercase'>Institut International des Rêves</h4>
             <h2 className='font-bold lg:text-4xl text-3xl lg:text-left text-center leading-tight title_color_mode_white'>Consultez des professionnels</h2>
           </div>
           <p className='text-base lg:text-left text-center leading-7 text-gray-400 text_color_mode_white'>
@@ -44,7 +44,7 @@ function Advertissement() {
             </button>
           </Link>
         </div>
-        <img src='/images/agent.jpeg' className="lg:w-1/3 w-full" alt="logo" />
+        <img src='/images/advertissement.png' style={{ width: 'auto', height: '400px' }} alt="logo" />
       </div>
     }
     </>
