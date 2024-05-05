@@ -12,8 +12,9 @@ function Footer(props: PropsMode) {
         <div className='max-lg:w-full flex flex-col xl:items-start items-center gap-10 w-96'>
           <div className='flex justify-normal items-center gap-3.5'>
             <img
-            src={process.env.REACT_APP_LOCAL_IMAGE_PATH + logo}
+            src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'logo.png'}
             className=""
+            style={{ width: 'auto', height: '100px' }}
             alt="Right-svg"
             />
             <h2 className='text-xl font-bold title_color_mode_white text_logo'>S.P.I.A</h2>
