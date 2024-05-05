@@ -24,11 +24,6 @@ export default function TemoignageCard({
       <span className="font-gotham-light text-lg font-normal text-description-white text-center">
         {children}
       </span>
-      <div className="flex">
-        <FaFacebookSquare className="w-7 h-7 mr-5" />
-        <FaLinkedin className="w-7 h-7" />
-        <FaTwitter className="w-7 h-7 ml-5" />
-      </div>
     </main>
   );
 }

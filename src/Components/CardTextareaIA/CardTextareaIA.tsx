@@ -74,8 +74,8 @@ export default function cardTextareaIA() {
     SpeechRecognition.startListening({ continuous: true, language: 'fr-FR' });
   };
   return (
-    <div className="w-full my-32 flex flex-col justify-center items-center relative">
-      <div className="lg:w-[868px] w-full  flex flex-col place-content-center items-center gap-10 z-10">
+    <div className="w-full my-32 flex flex-col justify-center items-center relative -z-50">
+      <div className="lg:w-[868px] w-full  flex flex-col place-content-center items-center gap-10 z-10 snap-y">
         <div className="w-full flex flex-col items-center gap-2">
           <h2 className="font-bold text-3xl text-center leading-tight title_color_mode_white">
             Interprétez vos rêves
