@@ -179,3 +179,10 @@ export interface Category {
   name: string;
   updated: Date;
 }
+
+export interface IAibooks {
+  label: string;
+  description: string;
+  route: string;
+  img: string;
+}

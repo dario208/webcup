@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import { PropsMode, ThemesData } from '../Type/Type';
+import { IAibooks, PropsMode, ThemesData } from '../Type/Type';
 import { getThemes } from '../Query/Theme.query';
 import { Link } from 'react-router-dom';
 import Footer from '../Components/Footer/Footer';
 import Advertissement from '../Components/Advertisement/Advertissement';
 import './styles/Aibooks.css';
+import { aibooksData } from '../data/aibooks';
 
 function Aibooks(props: PropsMode) {
   const bw = useRef(null as any);
@@ -65,6 +66,11 @@ function Aibooks(props: PropsMode) {
 
     scrolltoId('cards');
   };
+
+  const [aibooksList, setIabooks] = useState<IAibooks[]>([]);
+  useEffect(() => {
+    setIabooks(aibooksData)
+  }, []);
 
   return (
     <div className="w-full h-auto flex flex-col justify-center items-center">
@@ -170,181 +176,33 @@ function Aibooks(props: PropsMode) {
             </h2>
           </div>
           <div className="grid-cols-1 sm:grid md:grid-cols-4 list_cards">
-            <div
-              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
-              text-surface shadow-secondary-1 dark:bg-surface-dark 
-              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
-                <div className="description">
-                  <div className="font-bold text-lg m-1 text-center font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Titanium</div>
-                  <p className="m-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                  </p>
-                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
-                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
-                      Voir plus...
-                    </button>
+            {aibooksList.map((item, index) => (
+              <div
+              key={index}
+                className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+                text-surface shadow-secondary-1 dark:bg-surface-dark 
+                dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                  <div className="description">
+                    <div className="font-bold text-lg m-1 text-center 
+                      font-bold leading-tight text-transparent 
+                      bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">{item.label}</div>
+                    <p className="mx-4 my-3">
+                      {item.description}
+                    </p>
+                    <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                      <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                        Voir plus...
+                      </button>
+                    </div>
                   </div>
+                <div className="cover">
+                  <img
+                    className="object-cover h-full w-full"
+                    src={item.img}
+                    alt="Hollywood Sign on The Hill" />
                 </div>
-              <div className="cover">
-                <img
-                  className="object-cover h-full w-full"
-                  src="images/aibooks/domestique_0.png"
-                  alt="Hollywood Sign on The Hill" />
               </div>
-            </div>
-            <div
-              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
-              text-surface shadow-secondary-1 dark:bg-surface-dark 
-              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
-                <div className="description">
-                  <div className="font-bold text-lg m-1 text-center 
-                    font-bold leading-tight text-transparent bg-clip-text 
-                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Lithium</div>
-                  <p className="m-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                  </p>
-                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
-                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
-                      Voir plus...
-                    </button>
-                  </div>
-                </div>
-              <div className="cover">
-                <img
-                  className="object-cover h-full w-full"
-                  src="images/aibooks/militaire_1.png"
-                  alt="Hollywood Sign on The Hill" />
-              </div>
-            </div>
-            <div
-              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
-              text-surface shadow-secondary-1 dark:bg-surface-dark 
-              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
-                <div className="description">
-                  <div className="font-bold text-lg m-1 text-center 
-                    font-bold leading-tight text-transparent bg-clip-text 
-                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Thorium</div>
-                  <p className="m-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                  </p>
-                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
-                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
-                      Voir plus...
-                    </button>
-                  </div>
-                </div>
-              <div className="cover">
-                <img
-                  className="object-cover h-full w-full"
-                  src="images/aibooks/militaire_2.png"
-                  alt="Hollywood Sign on The Hill" />
-              </div>
-            </div>
-
-            <div
-              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
-              text-surface shadow-secondary-1 dark:bg-surface-dark 
-              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
-                <div className="description">
-                  <div className="font-bold text-lg m-1 text-center 
-                    font-bold leading-tight text-transparent bg-clip-text 
-                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Natirium</div>
-                  <p className="m-2">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                  </p>
-                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
-                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br 
-                    from-[#61285B] via-[#45389E] to-[#1E50FF]'>
-                      Voir plus...
-                    </button>
-                  </div>
-                </div>
-              <div className="cover">
-                <img
-                  className="object-cover h-full w-full"
-                  src="images/aibooks/domestique_1.png"
-                  alt="Hollywood Sign on The Hill" />
-              </div>
-            </div>
-            <div
-              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
-              text-surface shadow-secondary-1 dark:bg-surface-dark 
-              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
-                <div className="description">
-                  <div className="font-bold text-lg m-1 text-center 
-                    font-bold leading-tight text-transparent bg-clip-text 
-                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Enstenium</div>
-                  <p className="m-2">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                  </p>
-                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
-                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br 
-                    from-[#61285B] via-[#45389E] to-[#1E50FF]'>
-                      Voir plus...
-                    </button>
-                  </div>
-                </div>
-              <div className="cover">
-                <img
-                  className="object-cover h-full w-full"
-                  src="images/aibooks/brico_0.png"
-                  alt="Hollywood Sign on The Hill" />
-              </div>
-            </div>
-            <div
-              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
-              text-surface shadow-secondary-1 dark:bg-surface-dark 
-              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
-                <div className="description">
-                  <div className="font-bold text-lg m-1 text-center 
-                    font-bold leading-tight text-transparent bg-clip-text 
-                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Malagasyum</div>
-                  <p className="m-2">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
-                    exercitationem praesentium nihil.
-                  </p>
-                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
-                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
-                      Voir plus...
-                    </button>
-                  </div>
-                </div>
-              <div className="cover">
-                <img
-                  className="object-cover h-full w-full"
-                  src="images/aibooks/militaire_0.png"
-                  alt="militaire_0" />
-              </div>
-            </div>
+            ))}
             <button className="font-bold text-s flex justify-center items-center gap-2" style={{fontSize: '1.1rem'}}>
               Voir plus
               <FontAwesomeIcon
