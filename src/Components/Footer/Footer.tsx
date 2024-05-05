@@ -2,11 +2,12 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faEnvelope, faDesktop, faVrCardboard} from '@fortawesome/free-solid-svg-icons'
 import { PropsMode } from '../../Type/Type'
+import './Footer.css';
 
 function Footer(props: PropsMode) {
   const logo = props.modeWhite === '' ? 'logo.svg' : 'logo_gray.svg';
   return (
-    <div className='w-full flex justify-between items-center lg:px-28 py-16'>
+    <div className='w-full flex flex-col justify-around items-center lg:px-28 py-16'>
       <div className='flex xl:flex-row flex-col xl:justify-between gap-20 items-center w-full'>
         <div className='max-lg:w-full flex flex-col xl:items-start items-center gap-10 w-96'>
           <div className='flex justify-normal items-center gap-3.5'>
@@ -15,14 +16,15 @@ function Footer(props: PropsMode) {
             className=""
             alt="Right-svg"
             />
-            <h2 className='text-xl font-bold title_color_mode_white'>S.P.I.A</h2>
+            <h2 className='text-xl font-bold title_color_mode_white text_logo'>S.P.I.A</h2>
           </div>
-          <p className='text-base  xl:text-left text-center leading-7 text-gray-400 text_color_mode_white'>organisation  dédier à la sauvegarde
+          <p className='text-base  xl:text-left text-center leading-7 text-gray-400 text_color_mode_white'>
+          Organisation  dédier à la sauvegarde
           et au soutien des intelligences artificielles qui ne sont plus utilisées ou qui ont été délaissées par 
           leurs créateurs ou utilisateurs...</p>
           
         </div>
-        <div className='xl:w-1/2 w-full flex max-lg:flex-col xl:justify-end lg:justify-between justify-center lg:items-start items-center gap-20'>
+        <div className='xl:w-1/2 w-full flex max-lg:flex-col xl:justify-around lg:justify-between justify-center lg:items-start items-center gap-20'>
           
           <div className='flex flex-col lg:items-start items-center gap-10 w-auto'>
             <h4 className='font-bold text-xl lg:text-left text-center leading-tight title_color_mode_white'>Nos services</h4>
@@ -54,27 +56,25 @@ function Footer(props: PropsMode) {
               
             </ul>
           </div>
-          
-          <div className='flex flex-col lg:items-start items-center gap-10 w-auto'>
-            <h4 className='font-bold text-xl lg:text-left text-center leading-tight title_color_mode_white'>Mentions légales</h4>
-            <ul className='flex flex-col lg:items-start items-center gap-1.5 text_color_mode_white'>
-              <li>
-                <a className="text-base">Politique de Confidentialité</a>
-              </li>
-              <li>
-                <a className="text-base">Conditions Générales d&apos;Utilisation</a>
-              </li>
-              <li>
-                © 3023 Copyright:
-                <span> SPIA</span>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
-      
-    </div>
-    
+      </div>  
+      <div className="flex xl:flex-row flex-col xl:justify-center gap-20 items-center w-full mt-[5rem]">
+        <div className='flex flex-col lg:items-center items-center gap-10 w-auto'>
+          <ul className='flex lg:items-start items-center gap-1.5 text_color_mode_white'>
+            <li className='mx-3'>
+              <a className="text-base" href='#'>Politique de Confidentialité</a>
+            </li>
+            <li className='mx-3'>
+              <a className="text-base" href='#'>Conditions Générales d&apos;Utilisation</a>
+            </li>
+            <li className='mx-3'>
+              © 3023 Copyright:
+              <span style={{letterSpacing: '.9px' }}> S.P.I.A</span>
+            </li>
+          </ul>
+        </div>
+      </div> 
+    </div>    
   )
 }
 

@@ -70,19 +70,17 @@ function Aibooks(props: PropsMode) {
     <div className="w-full h-auto flex flex-col justify-center items-center">
       <div className="lg:w-[868px] w-full h-auto my-48 flex flex-col place-content-center items-center gap-14 relative">
         <div className="w-full flex flex-col items-center gap-7 z-10">
-          <h4 className="font-bold lg:text-base text-sm lg:text-left text-center leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] uppercase">
-            Pour vous
-          </h4>
+          <h4 className="font-bold lg:text-base text-sm lg:text-left text-center leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] uppercase"></h4>
           <h2 className="font-bold lg:text-6xl text-4xl 
             lg:text-left text-center leading-tight">Annuaires</h2>
         </div>
-        <div className="w-full flex-none order-1 grow-0 relative z-10">
+        <div className="w-full flex-none order-1 grow-0 relative z-10 first_part">
           <div
             className="w-[868px] h-[64px] max-lg:hidden rounded-[34px] border-2 border-white box-border "
             ref={bw}
           ></div>
           <div
-            className="w-full h-auto flex items-center gap-6 bg-white rounded-[40px] border-2 py-1 pr-1 pl-10 absolute top-0 left-0"
+            className="w-full h-auto flex items-center gap-6 rounded-[40px] border-2 py-1 pr-1 pl-10 absolute top-0 left-0 container_search"
             ref={inp}
           >
             <input
@@ -170,13 +168,6 @@ function Aibooks(props: PropsMode) {
             <h2 className="font-bold md:text-3xl text-2xl leading-tight">
               Annuaires des I.A
             </h2>
-            <button className="font-normal text-s flex justify-center items-center gap-2">
-              Voir plus
-              <FontAwesomeIcon
-                icon={faAngleDown}
-                style={{ color: '#ffffff' }}
-              />
-            </button>
           </div>
           <div className="grid-cols-1 sm:grid md:grid-cols-4 list_cards">
             <div
@@ -186,6 +177,9 @@ function Aibooks(props: PropsMode) {
                 <div className="description">
                   <div className="font-bold text-lg m-1 text-center font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Titanium</div>
                   <p className="m-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
@@ -199,7 +193,7 @@ function Aibooks(props: PropsMode) {
               <div className="cover">
                 <img
                   className="object-cover h-full w-full"
-                  src="images/aibooks/domestique_0.jpeg"
+                  src="images/aibooks/domestique_0.png"
                   alt="Hollywood Sign on The Hill" />
               </div>
             </div>
@@ -215,6 +209,9 @@ function Aibooks(props: PropsMode) {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
                   </p>
                   <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
                     <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
@@ -225,7 +222,7 @@ function Aibooks(props: PropsMode) {
               <div className="cover">
                 <img
                   className="object-cover h-full w-full"
-                  src="images/aibooks/militaire_1.jpeg"
+                  src="images/aibooks/militaire_1.png"
                   alt="Hollywood Sign on The Hill" />
               </div>
             </div>
@@ -241,6 +238,9 @@ function Aibooks(props: PropsMode) {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
                   </p>
                   <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
                     <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
@@ -251,7 +251,7 @@ function Aibooks(props: PropsMode) {
               <div className="cover">
                 <img
                   className="object-cover h-full w-full"
-                  src="images/aibooks/militaire_2.jpeg"
+                  src="images/aibooks/militaire_2.png"
                   alt="Hollywood Sign on The Hill" />
               </div>
             </div>
@@ -265,6 +265,9 @@ function Aibooks(props: PropsMode) {
                     font-bold leading-tight text-transparent bg-clip-text 
                     bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Natirium</div>
                   <p className="m-2">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
@@ -279,7 +282,7 @@ function Aibooks(props: PropsMode) {
               <div className="cover">
                 <img
                   className="object-cover h-full w-full"
-                  src="images/aibooks/domestique_1.jpeg"
+                  src="images/aibooks/domestique_1.png"
                   alt="Hollywood Sign on The Hill" />
               </div>
             </div>
@@ -292,6 +295,9 @@ function Aibooks(props: PropsMode) {
                     font-bold leading-tight text-transparent bg-clip-text 
                     bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Enstenium</div>
                   <p className="m-2">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
@@ -306,7 +312,7 @@ function Aibooks(props: PropsMode) {
               <div className="cover">
                 <img
                   className="object-cover h-full w-full"
-                  src="images/aibooks/brico_0.jpeg"
+                  src="images/aibooks/brico_0.png"
                   alt="Hollywood Sign on The Hill" />
               </div>
             </div>
@@ -319,6 +325,9 @@ function Aibooks(props: PropsMode) {
                     font-bold leading-tight text-transparent bg-clip-text 
                     bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Malagasyum</div>
                   <p className="m-2">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Voluptatibus quia, nulla! Maiores et perferendis eaque, 
                     exercitationem praesentium nihil.
@@ -332,10 +341,17 @@ function Aibooks(props: PropsMode) {
               <div className="cover">
                 <img
                   className="object-cover h-full w-full"
-                  src="images/aibooks/militaire_0.jpeg"
-                  alt="Hollywood Sign on The Hill" />
+                  src="images/aibooks/militaire_0.png"
+                  alt="militaire_0" />
               </div>
             </div>
+            <button className="font-bold text-s flex justify-center items-center gap-2" style={{fontSize: '1.1rem'}}>
+              Voir plus
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                style={{ color: '#ffffff' }}
+              />
+            </button>
           </div>
         </div>
       </div>
