@@ -122,7 +122,7 @@ function Header(props: PropsHeader) {
                 Annuaires
               </NavLink>
             </li>
-            <li className='dark:text-gray-800'>
+            {/* <li className='dark:text-gray-800'>
               <NavLink
                 to="/reve"
                 className={({ isActive }) =>
@@ -131,7 +131,7 @@ function Header(props: PropsHeader) {
               >
                 Vos rêves
               </NavLink>
-            </li>
+            </li> */}
             <li className='dark:text-gray-800'>
               <NavLink
                 to="/propos"
