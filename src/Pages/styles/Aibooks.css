@@ -68,8 +68,6 @@
     transform-origin: left;
     border-radius: 0 100% 0 0;
     backdrop-filter: blur(11px);
-    mask-image: url('../../../public/images/T5.png');
-    mask-size: cover;
     transform: perspective(2000px) rotateY(-90deg);
 }
 

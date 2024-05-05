@@ -4,7 +4,7 @@ export const aibooksData: IAibooks[] = [
     {
         label: "Titanium",
         description: "Titanium est une intelligence artificielle domestique conçue pour être à la fois fonctionnelle et empathique, offrant une expérience d'assistance complète et personnalisée à ses utilisateurs. Elle peut être intégrée à divers appareils domestiques, tels que des enceintes intelligentes, des écrans tactiles ou même des robots ménagers. Titanium dispose d'une voix chaleureuse et naturelle, capable de communiquer de manière claire...",
-        route: "",
+        route: "/profil",
         img: "images/aibooks/domestique_0.png"
     },
     {

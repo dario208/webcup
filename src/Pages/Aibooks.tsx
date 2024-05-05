@@ -190,9 +190,11 @@ function Aibooks(props: PropsMode) {
                       {item.description}
                     </p>
                     <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
-                      <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
-                        Voir plus...
-                      </button>
+                      <Link to="/profil">
+                        <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                          Voir plus...
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 <div className="cover">
