@@ -132,7 +132,7 @@ function Aibooks(props: PropsMode) {
                 <div className="cards">
                   <div className="w-[25rem] h-[17rem] rounded-[.7rem] card first">
                     <div className="max-w h-full overflow-hidden shadow-lg">
-                      <img className="w-full" src="images/aibooks/category_domestique.jpeg" alt="Sunset in the mountains" />
+                      <img className="w-full" src="images/aibooks/category_domestique.jpeg" alt="Domestiques I.A" />
                       <div className="card_details">
                         <div className="card_details_button px-3 py-2 rounded-full 
                           bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] text-md">Domestiques...</div>
@@ -141,7 +141,7 @@ function Aibooks(props: PropsMode) {
                   </div>
                   <div className="w-[25rem] h-[17rem] rounded-[.7rem] card second">
                     <div className="max-w h-full overflow-hidden shadow-lg">
-                      <img className="w-full" src="images/aibooks/category_militaire.jpeg" alt="Sunset in the mountains" />
+                      <img className="w-full" src="images/aibooks/category_militaire.jpeg" alt="Militairy I.A" />
                       <div className="card_details">
                         <div className="card_details_button px-3 py-2 rounded-full 
                           bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] text-md">Militaires...</div>
@@ -150,7 +150,7 @@ function Aibooks(props: PropsMode) {
                   </div>
                   <div className="w-[25rem] h-[17rem] rounded-[.7rem] card third">
                     <div className="max-w h-full overflow-hidden shadow-lg">
-                      <img className="w-full" src="images/aibooks/category_bricoleuse.jpeg" alt="Sunset in the mountains" />
+                      <img className="w-full" src="images/aibooks/category_bricoleuse.jpeg" alt="Maker I.A" />
                     </div>
                     <div className="card_details">
                       <div className="card_details_button px-3 py-2 rounded-full 
@@ -178,28 +178,164 @@ function Aibooks(props: PropsMode) {
               />
             </button>
           </div>
-          <div
-            className="w-full h-auto grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-6"
-            id="cards"
-          >
-            {themesList?.items &&
-              themesList.items.map((itemTheme, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center gap-4 px-10 py-16 bg-black-rgba bg-black-500 backdrop-blur-3xl rounded-3xl "
-                >
-                  <Link to={`/details/${itemTheme.id}/${index + 1}`}>
-                    <img
-                      src={`images/T${index + 1}.png`}
-                      className="rounded-[40px] w-[80px]"
-                      alt="logo"
-                    />
-                    <h2 className="font-bold text-xl leading-tight text-center w-full">
-                      {itemTheme.name}
-                    </h2>
-                  </Link>
+          <div className="grid-cols-1 sm:grid md:grid-cols-4 list_cards">
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Titanium</div>
+                  <p className="m-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
                 </div>
-              ))}
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/domestique_0.jpeg"
+                  alt="Hollywood Sign on The Hill" />
+              </div>
+            </div>
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center 
+                    font-bold leading-tight text-transparent bg-clip-text 
+                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Lithium</div>
+                  <p className="m-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
+                </div>
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/militaire_1.jpeg"
+                  alt="Hollywood Sign on The Hill" />
+              </div>
+            </div>
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center 
+                    font-bold leading-tight text-transparent bg-clip-text 
+                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Thorium</div>
+                  <p className="m-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
+                </div>
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/militaire_2.jpeg"
+                  alt="Hollywood Sign on The Hill" />
+              </div>
+            </div>
+
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center 
+                    font-bold leading-tight text-transparent bg-clip-text 
+                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Natirium</div>
+                  <p className="m-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br 
+                    from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
+                </div>
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/domestique_1.jpeg"
+                  alt="Hollywood Sign on The Hill" />
+              </div>
+            </div>
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center 
+                    font-bold leading-tight text-transparent bg-clip-text 
+                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Enstenium</div>
+                  <p className="m-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br 
+                    from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
+                </div>
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/brico_0.jpeg"
+                  alt="Hollywood Sign on The Hill" />
+              </div>
+            </div>
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center 
+                    font-bold leading-tight text-transparent bg-clip-text 
+                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Malagasyum</div>
+                  <p className="m-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
+                </div>
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/militaire_0.jpeg"
+                  alt="Hollywood Sign on The Hill" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
