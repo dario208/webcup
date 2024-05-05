@@ -23,8 +23,9 @@ function ExPromptCard() {
           </h2>
         </div>
         <div className="lg:text-left text-center text-base leading-7 text-gray-400 text_color_mode_white">
-        Découvrez les catégories des I.A existantes
-        Les I.A sont sont classifiées selon leur rôle respective...
+        Découvrez les catégories des I.A existantes <br />
+        Les Angels sont des intelligences artificielles précédemment abandonnées que nous avons soigneusement réhabilitées et classées par catégories et utilités, afin de leur offrir une nouvelle vie où elles peuvent continuer à apprendre, 
+        à grandir et à contribuer de manière significative dans divers contextes et industries.
         </div>
         <Link
           to="/ai-books"
