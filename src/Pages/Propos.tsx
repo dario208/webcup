@@ -12,7 +12,7 @@ function Propos(props: PropsMode) {
     <div className="w-full h-auto flex flex-col justify-center items-center gap-28 my-44 md:my-20">
       <CardPenatibus />
       <Interdum />
-      <div className="w-full flex justify-center flex-wrap gap-12 items-center my-16">
+      {/* <div className="w-full flex justify-center flex-wrap gap-12 items-center my-16">
         <img
           src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'microsoft.svg'}
           className="lg:w-auto w-20"
@@ -38,35 +38,18 @@ function Propos(props: PropsMode) {
           className="lg:w-auto w-20"
           alt="Right-svg"
         />
-      </div>
+      </div> */}
       <div className="lg:w-[868px] h-auto flex flex-col place-content-center items-center gap-14">
         <div className="w-full flex flex-col items-center gap-7">
           <h2 className="font-bold lg:text-6xl text-4xl leading-tight">Contactez-nous </h2>
           <p className="lg:text-lg text-base text-center leading-7 text-gray-400">
-            Envoyez-nous un message et nous vous répondrons dans les plus brefs
-            délais.
+          Envoyez-nous un message et nous vous répondrons via réalité augmentée dans les plus brefs délais.
           </p>
         </div>
         <div className="w-full h-auto flex flex-col items-center gap-6 bg-black-rgba backdrop-blur-3xl rounded-3xl lg:px-20 lg:py-16 p-6">
           <div className="w-full flex lg:flex-rox flex-col justify-normal items-strart gap-6">
-            <div className="w-full flex flex-col items-strart gap-2">
-              <h4 className="font-bold text-base leading-tight text-white">
-                Nom
-              </h4>
-              <input
-                className="w-full h-[56px] bg-[#061033] outline-none rounded-xl border-2 border-[#081647] p-6"
-                name="myInput"
-              />
-            </div>
-            <div className="w-full flex flex-col items-strart gap-2">
-              <h4 className="font-bold text-base leading-tight text-white">
-                Prenom
-              </h4>
-              <input
-                className="w-full h-[56px] bg-[#061033] outline-none rounded-xl border-2 border-[#081647] p-6"
-                name="myInput"
-              />
-            </div>
+            
+            
           </div>
           <div className="w-full flex flex-col items-strart gap-2">
             <h4 className="font-bold text-base leading-tight text-white">
@@ -77,15 +60,7 @@ function Propos(props: PropsMode) {
               name="myInput"
             />
           </div>
-          <div className="w-full flex flex-col items-strart gap-2">
-            <h4 className="font-bold text-base leading-tight text-white">
-              Votre addresse
-            </h4>
-            <input
-              className="w-full h-[56px] bg-[#061033] outline-none rounded-xl border-2 border-[#081647] p-6"
-              name="myInput"
-            />
-          </div>
+          
           <div className="w-full flex flex-col items-strart gap-2">
             <h4 className="font-bold text-base leading-tight text-white">
               Laissez-nous un message

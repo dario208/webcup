@@ -9,7 +9,7 @@ export default function TemoignageCard({
   children = 'Temoignage',
 }: any) {
   return (
-    <main className="font-gotham-medium px-9 py-16 rounded-xl bg-[#20202097] cursor-pointer w-full sm:w-[432px] flex flex-col items-center justify-center gap-10 card">
+    <main className=" card font-gotham-medium px-9 py-16 rounded-xl bg-[#20202097] cursor-pointer w-full sm:w-[432px] flex flex-col items-center justify-center gap-10 card">
       <img
         src={process.env.REACT_APP_LOCAL_IMAGE_PATH + image}
         alt="Card_image"

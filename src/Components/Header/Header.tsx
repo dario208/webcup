@@ -93,11 +93,12 @@ function Header(props: PropsHeader) {
     <header className="w-full relative pt-4 md:py-10 flex justify-between items-center lg:px-20">
         <Link to="/" className="flex justify-normal items-center gap-3.5">
           <img
-            src={process.env.REACT_APP_LOCAL_IMAGE_PATH + logo }
+            src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'logo.png '}
             className=""
+            style={{ width: 'auto', height: '150px' }}
             alt="Right-svg"
           />
-          <h2 className="text-xl font-bold dark:text-gray-800">SPIA</h2>
+          <h2 className="text-xl font-bold dark:text-gray-800 text_logo">S.P.I.A</h2>
         </Link>
         <>
           <ul className={cardMenue}>
@@ -113,7 +114,7 @@ function Header(props: PropsHeader) {
             </li>
             <li className='dark:text-gray-800'>
               <NavLink
-                to="/ai-books "
+                to="/ai-books"
                 className={({ isActive }) =>
                   isActive ? 'active' : ''
                 }
@@ -123,7 +124,7 @@ function Header(props: PropsHeader) {
             </li>
             <li className='dark:text-gray-800'>
               <NavLink
-                to="/reve "
+                to="/reve"
                 className={({ isActive }) =>
                   isActive ? 'active' : ''
                 }
@@ -133,7 +134,7 @@ function Header(props: PropsHeader) {
             </li>
             <li className='dark:text-gray-800'>
               <NavLink
-                to="/propos "
+                to="/propos"
                 className={({ isActive }) =>
                   isActive ? 'active' : ''
                 }

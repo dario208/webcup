@@ -12,6 +12,7 @@ import Services from '../Components/Vestibulum/Services';
 import Temoignage from '../Components/Temoignage/Temoignage';
 import ExPromptCard from '../Components/CardPenatibus/ExPromptCard';
 import Advertissement from '../Components/Advertisement/Advertissement';
+import AnimatedConicGradient from '../Components/Anima/AnimatedConicGradient';
 import { PropsMode } from '../Type/Type';
 
 function Home(props: PropsMode) {
@@ -19,15 +20,21 @@ function Home(props: PropsMode) {
     <div>
       <Accueil />
       <Advertissement />
-      <Partenaire modeWhite={props.modeWhite}/>
+      {/* <Partenaire modeWhite={props.modeWhite}/> */}
       <ExPromptCard/>
       {/* <Services /> */}
       <Penatibus />
       <Nunc/>
-      <CardTextareaIA />
-      <Temoignage />
+      {/* <CardTextareaIA /> */}
+      {/* <Temoignage /> */}
+      <br />
+      <br />
       {/* <CardPenatibus /> */}
       {/* <Interdum /> */}
+      {/* <Footer modeWhite={props.modeWhite}/> */}
+      {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <AnimatedConicGradient />
+      </div> */}
       <Footer modeWhite={props.modeWhite}/>
     </div>
   );

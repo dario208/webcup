@@ -7,6 +7,7 @@ import { getThemes } from '../Query/Theme.query';
 import { Link } from 'react-router-dom';
 import Footer from '../Components/Footer/Footer';
 import Advertissement from '../Components/Advertisement/Advertissement';
+import './styles/Aibooks.css';
 
 function Aibooks(props: PropsMode) {
   const bw = useRef(null as any);
@@ -69,19 +70,17 @@ function Aibooks(props: PropsMode) {
     <div className="w-full h-auto flex flex-col justify-center items-center">
       <div className="lg:w-[868px] w-full h-auto my-48 flex flex-col place-content-center items-center gap-14 relative">
         <div className="w-full flex flex-col items-center gap-7 z-10">
-          <h4 className="font-bold lg:text-base text-sm lg:text-left text-center leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] uppercase">
-            Pour vous
-          </h4>
+          <h4 className="font-bold lg:text-base text-sm lg:text-left text-center leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] uppercase"></h4>
           <h2 className="font-bold lg:text-6xl text-4xl 
             lg:text-left text-center leading-tight">Annuaires</h2>
         </div>
-        <div className="w-full flex-none order-1 grow-0 relative z-10">
+        <div className="w-full flex-none order-1 grow-0 relative z-10 first_part">
           <div
             className="w-[868px] h-[64px] max-lg:hidden rounded-[34px] border-2 border-white box-border "
             ref={bw}
           ></div>
           <div
-            className="w-full h-auto flex items-center gap-6 bg-white rounded-[40px] border-2 py-1 pr-1 pl-10 absolute top-0 left-0"
+            className="w-full h-auto flex items-center gap-6 rounded-[40px] border-2 py-1 pr-1 pl-10 absolute top-0 left-0 container_search"
             ref={inp}
           >
             <input
@@ -106,138 +105,253 @@ function Aibooks(props: PropsMode) {
           alt="Right-svg"
         />
       </div>
-      <Advertissement/>
+      {/* <Advertissement/> */}
       <div className="w-full h-auto flex flex-col justify-center items-center gap-28 py-20">
+
+
         <div className="w-full flex justify-between items-center">
           <div className="w-full flex lg:flex-row flex-col justify-between items-start gap-20">
             <div className="lg:w-2/5 w-full flex flex-col lg:items-strart items-center lg:gap-20 gap-6">
               <div className="w-full flex flex-col lg:items-start items-center gap-2">
                 <h4 className="font-bold lg:text-base text-sm lg:text-left text-center leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] uppercase">
-                  Annuaires
+                  Catégories
                 </h4>
                 <h2 className="font-bold lg:text-5xl text-3xl lg:text-left text-center leading-tight w-full">
-                  Découvrez ce que signifie certains symboles dans vos rêves
+                  Découvrez les catégories des I.A existantes
                 </h2>
               </div>
               <p className="lg:text-base text-sm lg:text-left text-center leading-7 text-gray-400">
-                Rappeler-vous , les rêves sont des messages de votre
-                subconscient
+                Les I.A sont sont classifiées selon leur rôle respective...
               </p>
             </div>
-            <div className="w-full h-auto flex flex-col items-strart gap-10">
-              <div className="w-full h-auto rounded-[40px] relative">
-                <img
-                  src="images/img11.png"
-                  className="w-full rounded-[40px] lg:h-[558px] h-[380px]"
-                  alt="logo"
-                />
-                <div className="w-full h-full rounded-[40px] absolute left-0 top-0 lg:pl-20 lg:pt-20 md:pl-10 md:pt-10 lg:pr-10 lg:pb-10 p-6 flex justify-between items-start">
-                  <img
-                    src={process.env.REACT_APP_LOCAL_IMAGE_PATH + 'blood.svg'}
-                    className="max-md:hidden"
-                    alt="Right-svg"
-                  />
-                  <div className="md:w-[380px] w-full h-full flex flex-col justify-between items-strart">
-                    <div className="w-full flex flex-col items-start gap-2">
-                      <h4 className="font-normal text-base leading-tight text-black">
-                        Thème
-                      </h4>
-                      <h2 className="font-bold text-3xl leading-tight w-full text-black">
-                        La signification du sang dans vos rêves
-                      </h2>
+
+            <div className="w-full flex flex-col items-strart gap-10">
+              <div className="w-full container_cards">
+                <div className="cards">
+                  <div className="w-[25rem] h-[17rem] rounded-[.7rem] card first">
+                    <div className="max-w h-full overflow-hidden shadow-lg">
+                      <img className="w-full" src="images/aibooks/category_domestique.jpeg" alt="Domestiques I.A" />
+                      <div className="card_details">
+                        <div className="card_details_button px-3 py-2 rounded-full 
+                          bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] text-md">Domestiques...</div>
+                      </div>
                     </div>
-                    <Link to="/details/8bf5qpa7a96hv4o/8" >
-                      <button className="w-full py-3 px-7 rounded-full bg-black font-bold lg:text-lg text-base">
-                        Voir plus
-                      </button>
-                    </Link>
+                  </div>
+                  <div className="w-[25rem] h-[17rem] rounded-[.7rem] card second">
+                    <div className="max-w h-full overflow-hidden shadow-lg">
+                      <img className="w-full" src="images/aibooks/category_militaire.jpeg" alt="Militairy I.A" />
+                      <div className="card_details">
+                        <div className="card_details_button px-3 py-2 rounded-full 
+                          bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] text-md">Militaires...</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[25rem] h-[17rem] rounded-[.7rem] card third">
+                    <div className="max-w h-full overflow-hidden shadow-lg">
+                      <img className="w-full" src="images/aibooks/category_bricoleuse.jpeg" alt="Maker I.A" />
+                    </div>
+                    <div className="card_details">
+                      <div className="card_details_button px-3 py-2 rounded-full 
+                        bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] text-md">Bricoleuses...</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="w-full lg:h-[558px] h-auto flex md:flex-row flex-col justify-center items-center gap-10">
-                <div className="w-full h-full rounded-[40px] relative">
-                  <img
-                    src="images/img12.png"
-                    className="w-full rounded-[40px] lg:h-[558px] h-[380px]"
-                    alt="logo"
-                  />
-                  <div className="w-full lg:h-[558px] h-[380px] flex flex-col justify-between items-strart absolute left-0 top-0 lg:p-10 p-6">
-                    <div className="w-full flex flex-col items-start gap-2">
-                      <h2 className="font-bold text-3xl leading-tight w-full text-black">
-                        Amitié
-                      </h2>
-                      <h4 className="font-normal text-xl leading-8 text-black">
-                        L&apos;amitié est un thème récurrent dans les rêves.
-                      </h4>
-                    </div>
-                    <Link to="/details/sgzcrrttdbhijms/11" >
-                      <button className="w-full py-3 px-7 rounded-full bg-black font-bold lg:text-lg text-base">
-                        Voir plus
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                <div className="w-full h-full rounded-[40px] relative">
-                  <img
-                    src="images/img13.png"
-                    className="w-full rounded-[40px] lg:h-[558px] h-[380px]"
-                    alt="logo"
-                  />
-                  <div className="w-full lg:h-[558px] h-[380px] flex flex-col justify-between items-strart absolute left-0 top-0 lg:p-10 p-6">
-                    <div className="w-full flex flex-col items-start gap-2">
-                      <h2 className="font-bold text-3xl leading-tight w-full text-black">
-                        Le voyage
-                      </h2>
-                      <h4 className="font-normal text-xl leading-8 text-black">
-                        Chaque voyage est une aventure, et les rêves de voyage
-                      </h4>
-                    </div>
-                    <Link to="/details/5rw24ynuf4tgwkq/5" >
-                      <button className="w-full py-3 px-7 rounded-full bg-black font-bold lg:text-lg text-base">
-                        Voir plus
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
+
+
         <div className="w-full h-auto flex flex-col items-start gap-10">
           <div className="w-full flex justify-between items-center">
             <h2 className="font-bold md:text-3xl text-2xl leading-tight">
-              Thèmes de rêves
+              Annuaires des I.A
             </h2>
-            <button className="font-normal text-s flex justify-center items-center gap-2">
+          </div>
+          <div className="grid-cols-1 sm:grid md:grid-cols-4 list_cards">
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Titanium</div>
+                  <p className="mx-4 my-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
+                </div>
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/domestique_0.png"
+                  alt="Hollywood Sign on The Hill" />
+              </div>
+            </div>
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center 
+                    font-bold leading-tight text-transparent bg-clip-text 
+                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Lithium</div>
+                  <p className="mx-4 my-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
+                </div>
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/militaire_1.png"
+                  alt="Hollywood Sign on The Hill" />
+              </div>
+            </div>
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center 
+                    font-bold leading-tight text-transparent bg-clip-text 
+                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Thorium</div>
+                  <p className="mx-4 my-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
+                </div>
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/militaire_2.png"
+                  alt="Hollywood Sign on The Hill" />
+              </div>
+            </div>
+
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center 
+                    font-bold leading-tight text-transparent bg-clip-text 
+                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Natirium</div>
+                  <p className="mx-4 my-3">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br 
+                    from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
+                </div>
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/domestique_1.png"
+                  alt="Hollywood Sign on The Hill" />
+              </div>
+            </div>
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center 
+                    font-bold leading-tight text-transparent bg-clip-text 
+                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Enstenium</div>
+                  <p className="mx-4 my-3">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br 
+                    from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
+                </div>
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/brico_0.png"
+                  alt="Hollywood Sign on The Hill" />
+              </div>
+            </div>
+            <div
+              className="mx-3 mt-6 flex flex-col rounded-lg bg-white 
+              text-surface shadow-secondary-1 dark:bg-surface-dark 
+              dark:text-white sm:shrink-0 sm:grow sm:basis-0 card">
+                <div className="description">
+                  <div className="font-bold text-lg m-1 text-center 
+                    font-bold leading-tight text-transparent bg-clip-text 
+                    bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]">Malagasyum</div>
+                  <p className="mx-4 my-3">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Voluptatibus quia, nulla! Maiores et perferendis eaque, 
+                    exercitationem praesentium nihil.
+                  </p>
+                  <div className="container_btn_see_more text-right mx-2 mt-5 mb-2">
+                    <button className='px-3 py-1 rounded-[34px] bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF]'>
+                      Voir plus...
+                    </button>
+                  </div>
+                </div>
+              <div className="cover">
+                <img
+                  className="object-cover h-full w-full"
+                  src="images/aibooks/militaire_0.png"
+                  alt="militaire_0" />
+              </div>
+            </div>
+            <button className="font-bold text-s flex justify-center items-center gap-2" style={{fontSize: '1.1rem'}}>
               Voir plus
               <FontAwesomeIcon
                 icon={faAngleDown}
                 style={{ color: '#ffffff' }}
               />
             </button>
-          </div>
-          <div
-            className="w-full h-auto grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-6"
-            id="cards"
-          >
-            {themesList?.items &&
-              themesList.items.map((itemTheme, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center gap-4 px-10 py-16 bg-black-rgba bg-black-500 backdrop-blur-3xl rounded-3xl "
-                >
-                  <Link to={`/details/${itemTheme.id}/${index + 1}`}>
-                    <img
-                      src={`images/T${index + 1}.png`}
-                      className="rounded-[40px] w-[80px]"
-                      alt="logo"
-                    />
-                    <h2 className="font-bold text-xl leading-tight text-center w-full">
-                      {itemTheme.name}
-                    </h2>
-                  </Link>
-                </div>
-              ))}
           </div>
         </div>
       </div>
