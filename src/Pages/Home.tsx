@@ -25,8 +25,8 @@ function Home(props: PropsMode) {
       {/* <Services /> */}
       <Penatibus />
       <Nunc/>
-      <CardTextareaIA />
-      <Temoignage />
+      {/* <CardTextareaIA /> */}
+      {/* <Temoignage /> */}
       <br />
       <br />
       {/* <CardPenatibus /> */}

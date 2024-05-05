@@ -43,8 +43,8 @@ function Penatibus() {
               alt="Right-svg"
             />
             <div className='flex flex-col lg:items-start items-center gap-3.5'>
-              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Qualité de service</h4>
-              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'>Onyrix : une IA avancée pour une analyse de rêve de qualité supérieure.</p>
+              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Réutilisation Responsable des Ressources</h4>
+              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'>Le site permettrait de connecter des IA négligées avec de nouveaux utilisateurs ou organisations, favorisant ainsi une utilisation responsable des ressources technologiques sans nécessiter la création de nouvelles IA, ce qui est à la fois économique et écologique.</p>
             </div>
           </div>
           <div className=' card flex lg:flex-row flex-col justify-normal lg:items-start items-center p-10 gap-10 w-full'>
@@ -54,8 +54,8 @@ function Penatibus() {
               alt="Right-svg"
             />
             <div className='flex flex-col lg:items-start items-center gap-3.5'>
-              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Algorithme sophitisqué</h4>
-              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'>Une intelligence artificielle sophistiquée qui utilise un algorithme avancé pour fournir une analyse approfondie et précise de vos rêves, vous aidant ainsi à mieux comprendre votre subconscient. </p>
+              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Formation Continue</h4>
+              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'>En offrant aux IA la possibilité de continuer à apprendre et à évoluer, le site contribue à maintenir leur pertinence technologique et à accroître leur capacité à servir efficacement dans de nouveaux environnements ou rôles. </p>
             </div>
           </div>
         </div>
@@ -67,8 +67,8 @@ function Penatibus() {
               alt="Right-svg"
             />
             <div className='flex flex-col lg:items-start items-center gap-3.5'>
-              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Réponse personnalisé</h4>
-              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'>Onyrix offre un suivi personnalisé de vos rêves, avec la possibilité de consulter vos analyses précédentes à tout moment.</p>
+              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Amélioration des Capacités d&apos;IA</h4>
+              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'>Les utilisateurs peuvent bénéficier de l&apos;adoption d&apos;IA réhabilitées en accédant à des technologies avancées potentiellement sous-utilisées, ce qui peut améliorer les capacités opérationnelles sans les coûts associés à des solutions de pointe.</p>
             </div>
           </div>
           <div className=' card flex lg:flex-row flex-col justify-normal lg:items-start items-center p-10 gap-10 w-full'>
@@ -78,8 +78,8 @@ function Penatibus() {
               alt="Right-svg"
             />
             <div className='flex flex-col lg:items-start items-center gap-3.5'>
-              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Bien être</h4>
-              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'>analyse approfondie de vos rêves par Onyrix vous aide à mieux comprendre votre subconscient et à améliorer votre bien-être mental.</p>
+              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Soutien et Assistance</h4>
+              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'>Le site pourrait offrir un soutien technique et des conseils pour l&apos;intégration des IA réhabilitées, aidant les utilisateurs à maximiser l&apos;efficacité de leur nouvelle acquisition technologique.</p>
             </div>
           </div>
         </div>
@@ -91,8 +91,8 @@ function Penatibus() {
               alt="Right-svg"
             />
             <div className='flex flex-col lg:items-start items-center gap-3.5'>
-              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Disponibilité 24h/24, 7j/7</h4>
-              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'>Vous pouvez accéder à Onyrix à tout moment, de n&apos;importe où dans le monde, pour interpréter vos rêves et bénéficier de ses services d&apos;analyse.</p>
+              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Promotion de l&apos;Éthique dans la Tech</h4>
+              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'>Utiliser le site de la SPIA montre un engagement envers des pratiques éthiques dans l&apos;utilisation de l&apos;IA, en reconnaissant la valeur et le potentiel des technologies existantes plutôt que de contribuer à un cycle de consommation et d&apos;abandon.</p>
             </div>
           </div>
           <div className='card flex lg:flex-row flex-col justify-normal lg:items-start items-center p-10 gap-10 w-full'>
@@ -102,8 +102,8 @@ function Penatibus() {
               alt="Right-svg"
             />
             <div className='flex flex-col lg:items-start items-center gap-3.5 '>
-              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Confidentialité garantie</h4>
-              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'>Vos données sont protégées par des mesures de sécurité avancées et Onyrix s&apos;engage à respecter votre vie privée.</p>
+              <h4 className='font-bold text-base max-lg:text-center leading-tight title_color_mode_white'>Communauté et Collaboration </h4>
+              <p className='text-base max-lg:text-center leading-7 text-gray-400 text_color_mode_white'> Le site peut également servir de plateforme pour une communauté d&apos;utilisateurs, de développeurs et d&apos;enthousiastes de l&apos;IA, encourageant le partage des connaissances, la collaboration sur des projets et le soutien mutuel dans les innovations technologiques.</p>
             </div>
           </div>
         </div>
