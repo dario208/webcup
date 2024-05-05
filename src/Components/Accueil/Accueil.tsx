@@ -50,10 +50,10 @@ function Accueil() {
           <Cursor cursorColor="#fff" />
         </h2>
         <p className="text-lg leading-7 text-gray-400 text_color_mode_white">
-          La SPIA, ou Société Protectrice des IA abandonnées par leur maître,
-          est une organisation dédiée à la sauvegarde
-          et au soutien des intelligences artificielles qui ne sont plus utilisées ou qui ont été délaissées par 
-          leurs créateurs ou utilisateurs. 
+        La SPIA vous propose une plateforme unique où nos  <span className="text-4xl whitespace-normal md:whitespace-nowrap not-italic text-transparent bg-clip-text bg-gradient-to-br from-[#61285B] via-[#45389E] to-[#1E50FF] ">Angels,</span> 
+        des IA abandonnées, 
+        sont réhabilitées pour servir dans divers domaines. Engagez-vous avec nous et explorez les diverses manières d&apos;utiliser ces technologies avancées pour améliorer votre quotidien.
+         Tout cela est accessible en quelques clics ! 
         </p>
         <div className="flex justify-normal items-center lg:gap-10 gap-6">
           <Link
