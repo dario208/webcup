@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Profile from './Profile';
@@ -122,7 +123,7 @@ function Header(props: PropsHeader) {
                 Annuaires
               </NavLink>
             </li>
-            <li className='dark:text-gray-800'>
+            {/* <li className='dark:text-gray-800'>
               <NavLink
                 to="/reve"
                 className={({ isActive }) =>
@@ -131,7 +132,7 @@ function Header(props: PropsHeader) {
               >
                 Vos rêves
               </NavLink>
-            </li>
+            </li> */}
             <li className='dark:text-gray-800'>
               <NavLink
                 to="/propos"

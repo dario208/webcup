@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FaFacebookSquare, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
@@ -32,3 +33,4 @@ export default function TemoignageCard({
     </main>
   );
 }
+

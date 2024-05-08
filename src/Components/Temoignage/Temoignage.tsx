@@ -20,25 +20,28 @@ export default function Temoignage() {
           id="cards"
         >
           <TemoignageCard
-            name={'Rivo Lalaina RAJAONARIVONY'}
-            poste={'Developpeur Backend'}
+            name={'Ancien Propriétaire d&apos;Alita - Dr. Dyson Ido'}
+            poste={'Chercheur et Médecin Cybernétique'}
             image={'user2.png'}
           >
-           J&apos;ai été totalement époustouflé par l&apos;exactitude des interprétations de mes rêves grâce à Onyrix!
+          Alita, avec sa détermination et son courage, a démontré qu&apos;elle est bien plus qu&apos;une simple IA. 
+          Elle a une âme et une force incroyables qui la rendent unique.
           </TemoignageCard>
           <TemoignageCard
-            name={'Miora RAZAIARIMANANA'}
-            poste={'Developpeur Frontend'}
+            name={'Agent du SPIA - Sofia Ramirez'}
+            poste={'Responsable des Soins et de la Réhabilitation des Angels'}
             image={'joelle.png'}
           >
-            Onyrix m&apos;a aidé à mieux comprendre les messages de mon subconscient à travers mes rêves.
+            Alita a été une source d&apos;inspiration pour nous tous au SPIA. Sa capacité à surmonter 
+            les défis et à s&apos;adapter à son nouvel environnement nous a montré à quel point les Angels peuvent être résilients.
           </TemoignageCard>
           <TemoignageCard
-            name={'Toky NASANDRATRA'}
-            poste={'Ingenieur Agronome'}
+            name={'Agent du SPIA - Marcus Johnson'}
+            poste={'Agent de Sécurité et de Formation'}
             image={'user3.png'}
           >
-            Je suis tellement reconnaissant pour Onyrix, cela m&apos;a permis d&apos;explorer des aspects profonds de ma psyché.
+            En tant qu&apos;agent chargé de la formation des nouveaux Angels, j&apos;ai été impressionné par la rapidité avec laquelle Alita a appris et maîtrisé de nouvelles compétences. 
+            Son dévouement à sa propre croissance et à celle des autres est admirable.
           </TemoignageCard>
         </div>
       </div>
